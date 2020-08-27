@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monitoring Center</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+</head>
+
+<body>
+    <div class="viewport">
+        <div class="column">
+            <!--概览-->
+            <div class="overview panel">
+                <div class="inner">
+                    <div class="item">
+                        <h4 id="total">4</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #006cff"></i>
+                            Total
+                        </span>
+                    </div>
+                    <div class="item">
+                        <h4 id="AP">2</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #6acca3"></i>
+                            APs
+                        </span>
+                    </div>
+                    <div class="item">
+                        <h4 id="Node">2</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #6acca3"></i>
+                            Nodes
+                        </span>
+                    </div>
+                    <div class="item">
+                        <h4>0</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #ed3f35"></i>
+                            abnormal
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--监控-->
+            <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <a href="javascript:;" data-index="0" class="active">MQTT client transfer data quantity</a>
+                    </div>
+                    <div class="content" style="display: block;">
+                        <div class="head">
+                            <span class="col">ID</span>
+                            <span class="col">IP</span>
+                            <span class="col">Receive</span>
+                            <span class="col">Send</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee" id="client">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--点位-->
+           <div class="monitor panel">
+                <div class="inner">
+                    <div class="tabs">
+                        <a href="javascript:;" data-index="0" class="active">Equipment Details</a>
+                    </div>
+                    <div class="content" style="display: block;">
+                        <div class="head">
+                            <span class="col">IP</span>
+                            <span class="col">Type</span>
+                            <span class="col">CPU</span>
+                            <span class="col">PING</span>
+
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee" id="machine">
+                                <div class="row">
+                                    <span class="col">10.1.0.159</span>
+                                    <span class="col">AP</span>
+                                    <span class="col"></span>
+                                    <span class="col"></span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="map">
+                <h3>
+                    <span class="icon-cube"></span>
+                    Data Flow Visualization
+                </h3>
+                <div class="chart">
+                    <div class="geo"></div>
+                </div>
+            </div>
+            
+       
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
+<script src="./js/index.js"></script>
+
+<script src="./js/china.js"></script>
+<script src="./js/mymap.js"></script>
+<script type="text/javascript">
+
+        
+
+        
+
+</script>
+
+
+</html>
